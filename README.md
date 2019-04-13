@@ -1,9 +1,15 @@
 # ChanDL
 Downloads files of a 4chan/8chan thread into a folder with multithreading.
 
+There are two versions of this downloader (one for python 2 and one for python 3).
+
 ## Dependencies
-* Python 2.7
-* requests module
+Depending on which version of the downloader script you want to use, you need the following:
+1. Python 2.x or Python 3.x
+
+### Installing the Python Modules
+You can install the necessary python modules by doing the following commands:
+1. ```pip install -r requirements.txt ```
 
 ## Usage
 ```
@@ -33,20 +39,15 @@ optional arguments:
                         Generate hashlist from directory.
 ```
 
-
-URL can be a 4chan or 8chan thread link such as 
-
+URL can be a 4chan or 8chan thread link such as:
 
 http://boards.4chan.org/wsg/thread/738403/anime-thread-1730
 
-
 or
-
 
 http://8ch.net/wsg/res/45.html
 
-
-Example: Download all .webm files of some thread
+##### Example: Download all .webm files of some thread
 
 ~/Pictures/Anime - is the folder where the files will be stored
 >chandl.py -url http://boards.4chan.org/wsg/thread/738403/anime-thread-1730 -d ~/Pictures/Anime -ext webm
